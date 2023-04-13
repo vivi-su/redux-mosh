@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1676263097858" clover="3.2.0">
+  <project timestamp="1676263097859" name="All files">
+    <metrics statements="62" coveredstatements="53" conditionals="12" coveredconditionals="10" methods="35" coveredmethods="26" elements="109" coveredelements="89" complexity="0" loc="62" ncloc="62" packages="3" files="11" classes="11"/>
+    <package name="src">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="math.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/math.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.store">
+      <metrics statements="43" coveredstatements="35" conditionals="2" coveredconditionals="2" methods="24" coveredmethods="15"/>
+      <file name="api.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/store/api.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="bugs.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/store/bugs.js">
+        <metrics statements="31" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="21" coveredmethods="14"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="119" count="4" type="stmt"/>
+        <line num="127" count="5" type="stmt"/>
+        <line num="128" count="5" type="stmt"/>
+        <line num="130" count="5" type="stmt"/>
+        <line num="131" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="133" count="4" type="stmt"/>
+        <line num="161" count="1" type="stmt"/>
+        <line num="162" count="1" type="stmt"/>
+        <line num="163" count="1" type="stmt"/>
+        <line num="164" count="3" type="stmt"/>
+        <line num="167" count="1" type="stmt"/>
+        <line num="168" count="0" type="stmt"/>
+        <line num="169" count="0" type="stmt"/>
+      </file>
+      <file name="configureStore.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/store/configureStore.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="9" type="stmt"/>
+      </file>
+      <file name="entities.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/store/entities.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="projects.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/store/projects.js">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="reducer.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/store/reducer.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="users.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/store/users.js">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.store.middleware">
+      <metrics statements="18" coveredstatements="17" conditionals="10" coveredconditionals="8" methods="10" coveredmethods="10"/>
+      <file name="api.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/store/middleware/api.js">
+        <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="5" count="32" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="11" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="24" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="32" count="4" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="logger.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/store/middleware/logger.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="5" count="32" type="stmt"/>
+      </file>
+      <file name="toast.js" path="/Users/Vivi/Documents/Mosh/Redux Source Code/redux-configure-toolkit-createSlice/src/store/middleware/toast.js">
+        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="2" count="32" type="cond" truecount="1" falsecount="1"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="32" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
