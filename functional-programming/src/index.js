@@ -15,7 +15,7 @@ import {compose, pipe} from 'lodash/fp'; // fp means functional programming
 //     const result = wrapInDiv(toLowerCase(trim(input)));
 
 // // solution 3: use loadash compose
-// const transform = compose(wrapInDiv, toLowerCase, trim);
+// const transform = compose(wrapInDiv, toLowerCase, trim); // with the compose, we always need to start from very right, that is the reason to use pipe
 // transform(input);
 
 // // solution 4: use loadash pipe
@@ -104,7 +104,7 @@ console.log(transform(input));
 
     // Adding
 
-    const added = [4, ...numbers];
+    const added = [4, ...numbers]; // [4, 1, 2, 3]
 
     // Adding numbers before 2
     const index = numbers.indexOf(2);
@@ -112,18 +112,16 @@ console.log(transform(input));
         ...numbers.slice(0, index),
         4,
         ...numbers.slice(index)
-    ];
-    console.log(anotherAdded);
+    ]; // [1, 4, 2, 3]
 
     // Removing
 
-    const removed = numbers.filter(n => n !== 2);
+    const removed = numbers.filter(n => n !== 2); // [1 , 3]; 
 
     // Updating (Replace 2 to 20)
 
-    const updatedArray = numbers.map(n => n=== 2 ? 20 : n);
+    const updatedArray = numbers.map(n => n=== 2 ? 20 : n); // [1, 20 , 3]
 
-    console.log(updatedArray);
 
     /**
      *  Enforcing Immutability
@@ -174,3 +172,45 @@ console.log(transform(input));
 
    let updatedBook3 = publish3(book3);
    console.log(updatedBook3);
+
+
+   // Exercise - wite code in a functional style to conver the input to the output
+
+   let inputE = { tag: "JAVASCRIPT" };
+   // output = "(javascript)";
+
+   const toLowerCaseE = str => str.toLowerCase();
+   const wrapE = str => `"(${str})"`;
+   console.log(toLowerCaseE(inputE.tag)); // javascript
+   const transformE = pipe(toLowerCaseE, wrapE);
+   console.log(transformE(inputE.tag)); // "(javascript)"
+
+   // Exercise - we have a recipe object as follows:
+
+        const recipe = {
+            name: "Spaghetti Bolognese",
+            ingredients: [ "egg", "salt"]
+        }
+
+        /**
+            * Assuming that this object is immutable, write code to
+            *   - Add s new ingredient("cream")
+            *   - Replace "egg" with "egg white"  
+            *   - Remove an ingredient("egg")
+            */
+
+        const recipeAddCream = {
+            ...recipe,
+            ingredients:[...recipe.ingredients, "cream"]
+        }
+
+        console.log(recipeAddCream); // ["egg", "salt", "cream"]
+
+        const recipeReplaceToEggwhite = recipeAddCream.ingredients.map((ing) =>
+          ing === "egg" ? "eggWhite" : ing
+        );
+        console.log(recipeReplaceToEggwhite); // ["eggWhite", "salt", "cream"]
+
+        const recipeRemoveEgg =recipeAddCream.ingredients.filter(ing=> ing !== "egg");
+
+        console.log(recipeRemoveEgg); // ["salt", "cream"]
